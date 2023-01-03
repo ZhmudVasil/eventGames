@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework 9 - JS DOM Events</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="task1">
+      <!-- TEMPLATE FOR TASK 1 GOES HERE -->
+      <h2>Task #1</h2>
+      <table class="tableTask1">
+        <tr>
+          <td class="cell cell-first" class="cell">Cell</td>
+          <td class="cell">Cell</td>
+          <td class="cell">Cell</td>
+        </tr>
+        <tr>
+          <td class="cell cell-first">Cell</td>
+          <td class="cell">Cell</td>
+          <td class="cell cell-special">Special cell</td>
+        </tr>
+        <tr>
+          <td class="cell cell-first">Cell</td>
+          <td class="cell">Cell</td>
+          <td class="cell">Cell</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="task2">
+      <!-- TEMPLATE FOR TASK 2 GOES HERE -->
+      <h2>Task #2</h2>
+      <form action="#" class="userForm">
+        <span class="description is-invalid">Type number does not follow format<br />+380*********</span>
+        <span class="description is-valid">Data was successfully sent</span>
+        <div class="inputBox">
+          <input maxlength="13" type="text" class="userPhone" placeholder="Type phone number in format +380*********" />
+          <button class="btn" onclick="sendBtn()" disabled>Send</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="task3">
+      <!-- TEMPLATE FOR TASK 3 GOES HERE -->
+      <h2>Task #3</h2>
+      <div class="court">
+        <p class="court__title">Goal scored team:<span class="court__title-teamGoal">A</span></p>
+        <img class="court__basketballCourt" src="./assets/court.png" alt="basketball court" />
+        <img class="court__ball" src="./assets/ball.png" alt="basketball ball" />
+        <div class="court__is-Score teamA"></div>
+        <div class="court__is-Score teamB"></div>
+      </div>
+      <div class="court is-disabled"></div>
+
+      <div class="tableScore">
+        <label
+          >Team A:
+          <input class="tableScore__A" type="number" name="scoreA" value="0" maxlength="3" disabled />
+        </label>
+        <label
+          >Team B:
+          <input class="tableScore__B" type="number" name="scoreA" value="0" maxlength="3" disabled />
+        </label>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
